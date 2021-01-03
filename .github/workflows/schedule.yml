@@ -1,0 +1,15 @@
+on:
+  schedule:
+  - cron: '0 * * * *'
+name: Excavator
+jobs:
+  excavate:
+    name: Excavator
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@main
+    - name: Excavator
+      uses: Ash258/Scoop-GithubActions@stable-win
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SKIP_UPDATED: '1'
