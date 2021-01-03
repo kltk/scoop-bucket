@@ -1,0 +1,63 @@
+{
+    "version": "1.3.2",
+    "description": "Ultra VNC remote access tools",
+    "homepage": "https://www.uvnc.com",
+    "url": [
+        "https://www.uvnc.com/component/jdownloads/send/0-/402-ultravnc-1-3-2-bin-zip.html?Itemid=0#/dl.zip",
+        "https://www.uvnc.com/download/encryptionplugins.zip"
+    ],
+    "hash": [
+        "ba6abb0e2d66960ef76bd4540075d0e33cecbb3db60b25224ddcc46e831d0061",
+        "14024a825fe7c6b6924f21506ccf9be175c9594d44672cb7697dbe9e0be16405"
+    ],
+    "architecture": {
+        "64bit": {
+            "extract_dir": [
+                "x64",
+                "encryptionplugins/All/64"
+            ]
+        },
+        "32bit": {
+            "extract_dir": "x86"
+        }
+    },
+    "pre_install": [
+        "New-Item \"$persist_dir\\options.vnc\" -ErrorAction Ignore | Out-Null",
+        "New-Item \"$persist_dir\\UltraVNC.ini\" -ErrorAction Ignore | Out-Null",
+        "New-Item \"$persist_dir\\mslogon.log\" -ErrorAction Ignore | Out-Null"
+    ],
+    "post_install": [
+        "if (!(Test-Path -Path \"$dir\\encryptionplugins\\All\\*\")) {",
+        "  Remove-Item \"$dir\\encryptionplugins\\All\"",
+        "}",
+        "if (!(Test-Path -Path \"$dir\\encryptionplugins\\*\")) {",
+        "  Remove-Item \"$dir\\encryptionplugins\"",
+        "}"
+    ],
+    "bin": [
+        "winvnc.exe",
+        "vncviewer.exe"
+    ],
+    "shortcuts": [
+        [
+            "winvnc.exe",
+            "VNC Server"
+        ],
+        [
+            "vncviewer.exe",
+            "VNCViewer"
+        ]
+    ],
+    "persist": [
+        "options.vnc",
+        "UltraVNC.ini",
+        "mslogon.log"
+    ],
+    "checkver": {
+        "url": "https://www.uvnc.com/downloads/ultravnc.html",
+        "regex": "download ultravnc ([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://www.uvnc.com/component/jdownloads/send/0-/402-ultravnc-$dashVersion-bin-zip.html?Itemid=0#/dl.zip"
+    }
+}
