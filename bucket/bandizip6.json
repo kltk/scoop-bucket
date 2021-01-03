@@ -6,36 +6,16 @@
         "identifier": "Freeware",
         "url": "https://en.bandisoft.com/bandizip/eula/"
     },
-    "url": "https://en.bandisoft.com/bandizip/dl.php?old#/dl.7z",
+    "url": "https://en.bandisoft.com/bandizip/dl.php?old#/setup.exe",
     "hash": "37d68f273d0479adec08db3a75bd229c6fad121894ae9bd456fedd8b5f2d2ede",
     "installer": {
         "script": [
-            "$hash = @{ '64bit' = 'Bandizip64'; '32bit' = 'Bandizip32' }",
-            "$bin = $hash[$architecture]",
-            "Rename-Item \"$dir\\$bin.exe\" 'Bandizip.exe'",
-            "Get-ChildItem \"$dir\\Bandizip??.exe\" | Remove-Item",
-            "New-Item \"$persist_dir\\Bandizip.ini\" -ErrorAction Ignore | Out-Null",
-            "# https://www.maldun.com/analysis/YXNkZmRzZmFkc2Y0NDM1Mzlkc2Zhc2RmYXNkZg==/",
-            "# \"$dir\\Bandizip.exe\" /regmandatoryadmin",
-            "# \"$dir\\data/RegDll32.exe\" /regieemulation Bandizip.exe",
-            "# \"$dir\\data/RegDll32.exe\" /regieemulation Updater.exe",
-            "sudo \"$dir\\data\\RegDll32.exe\" /s /calldll \"$dir\\bdzshl32.dll\" RegSvr",
-            "sudo \"$dir\\data\\RegDll64.exe\" /s /calldll \"$dir\\bdzshl64.dll\" RegSvr",
-            "# \"$dir\\data\\RegDll32.exe\" /addpath \"$dir\"",
-            "# \"$dir\\data\\RegDll64.exe\" /removepath \"$dir\\7z\"",
-            "# \"$dir\\Bandizip.exe\" /setdefaultprogram"
+            "Start-Process -Wait -Verb RunAs \"$dir\\setup.exe\" -ArgumentList @('/D:\"'+$dir+'\"', '/S')"
         ]
     },
     "uninstaller": {
         "script": [
-            "# \"$dir\\Bandizip.exe\" /unregalladmin",
-            "# \"$dir\\Bandizip.exe\" /deldefaultprogram",
-            "sudo \"$dir\\data\\RegDll32.exe\" /s /calldll \"$dir\\bdzshl32.dll\" UnregSvr",
-            "sudo \"$dir\\data\\RegDll64.exe\" /s /calldll \"$dir\\bdzshl64.dll\" UnregSvr",
-            "# \"$dir\\data\\RegDll32.exe\" /removepath \"$dir\"",
-            "# \"$dir\\data\\RegDll64.exe\" /removepath \"$dir\\7z\"",
-            "# \"$dir\\data\\RegDll32.exe\" /unregieemulation Bandizip.exe",
-            "# \"$dir\\data\\RegDll32.exe\" /unregieemulation Updater.exe"
+            "Start-Process -Wait \"$dir\\Uninstall.exe\""
         ]
     },
     "bin": "Bandizip.exe",
@@ -51,6 +31,6 @@
         "regex": ">Download Bandizip v([\\d.]+)</a>"
     },
     "autoupdate": {
-        "url": "https://en.bandisoft.com/bandizip/dl.php?old#/dl.7z"
+        "url": "https://en.bandisoft.com/bandizip/dl.php?old#/setup.exe"
     }
 }
