@@ -1,9 +1,9 @@
 {
-    "version": "3.0.3760",
+    "version": "3.0.3766",
     "description": "A free, powerful, multi-purpose tool that helps you monitor system resources, debug software and detect malware.",
     "homepage": "https://wj32.org/processhacker",
-    "url": "https://ci.appveyor.com/api/buildjobs/enyh3hm4c9eyfm60/artifacts/processhacker-3.0.3760-bin.zip",
-    "hash": "85bd24eb39ec38cbc91512c362fadbf44fff10eadd5ae26a99328cc424c7247c",
+    "url": "https://ci.appveyor.com/api/buildjobs/53ln5lwkf7ykpjjl/artifacts/processhacker-3.0.3766-bin.zip",
+    "hash": "eb1c25d477e8c886359385167827b8fdfde818f16fc194f4578cdae4f2f9f69c",
     "architecture": {
         "64bit": {
             "extract_dir": "64bit"
