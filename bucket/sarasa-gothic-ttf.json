@@ -1,0 +1,39 @@
+{
+    "version": "0.17.0",
+    "description": "This is SARASA GOTHIC, a CJK programming font based on Iosevka and Source Han Sans.",
+    "homepage": "https://github.com/be5invis/Sarasa-Gothic",
+    "url": [
+        "https://github.com/be5invis/Sarasa-Gothic/releases/download/v0.17.0/sarasa-gothic-ttf-0.17.0.7z",
+        "https://gist.githubusercontent.com/Jaykul/d53a16ce5e7d50b13530acb4f98aaabd/raw/e79bfc0a61e3bc8f2c5fd9f67979d1066ff02cbc/Fonts.psm1"
+    ],
+    "hash": [
+        "ee7e71b195a9f662cadf7354166f5dd851fe924023c2665fe22c8cc63b77274d",
+        "51a94af2aa45bd17dbb196f015574c1107164d115c90307280104de4423d82c7"
+    ],
+    "installer": {
+        "script": [
+            "Import-Module \"$dir/Fonts.psm1\"",
+            "Get-ChildItem $dir -filter 'sarasa*.ttf' | ForEach-Object {",
+            "  # $name = (New-Object -COMObject Shell.Application).Namespace($dir).GetDetailsOf($_, 21)",
+            "  # New-ItemProperty -Path 'HKCU:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value $dir\\$_.Name -Force | Out-Null",
+            "  Add-Font $dir\\$_",
+            "}"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "Import-Module \"$dir/Fonts.psm1\"",
+            "Get-ChildItem $dir -filter 'sarasa*.ttf' | ForEach-Object {",
+            "  # Remove-ItemProperty -Path 'HKCU:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
+            "  Remove-Font $dir\\$_",
+            "}",
+            "Write-Host \"The 'Sarasa-Gothic' Font family has been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
+        ]
+    },
+    "checkver": {
+        "github": "https://github.com/be5invis/Sarasa-Gothic"
+    },
+    "autoupdate": {
+        "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v$version/sarasa-gothic-ttf-$version.7z"
+    }
+}
