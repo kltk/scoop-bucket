@@ -36,6 +36,6 @@
         "regex": "weasel-([\\d.]+)-installer.exe"
     },
     "autoupdate": {
-        "url": "https://dl.bintray.com/rime/weasel/weasel-$version-installer.exe"
+        "url": "https://dl.bintray.com/rime/weasel/weasel-$version-installer.exe#/dl.7z"
     }
 }
