@@ -30,6 +30,7 @@
         "replace": "${1}.${2}"
     },
     "autoupdate": {
-        "url": "http://cintanotes.com/files/CintaNotes_$underscoreVersion.zip"
+        "url": "http://cintanotes.com/files/CintaNotes_$underscoreVersion.zip",
+        "extract_dir": "CintaNotes_$underscoreVersion"
     }
 }
