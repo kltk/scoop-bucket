@@ -1,9 +1,9 @@
 {
-    "version": "3.3.0.21972",
+    "version": "3.3.0.22020",
     "homepage": "https://tim.qq.com",
     "description": "TIM",
-    "url": "https://dl.softmgr.qq.com/original/im/TIM3.3.0.21972.exe#/dl.7z",
-    "hash": "fe1a43959263322467a547f4c5c9fcec14370fe5de4abf75b51c9a9290c69cd0",
+    "url": "https://dl.softmgr.qq.com/original/im/TIM3.3.0.22020.exe#/dl.7z",
+    "hash": "3d6165b9fd0668ddd335d177f4c2b6abbabbb273d03c0d9161014e6eb5cb72ce",
     "extract_dir": "Files",
     "shortcuts": [
         [
