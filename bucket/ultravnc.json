@@ -3,7 +3,7 @@
     "description": "Ultra VNC remote access tools",
     "homepage": "https://www.uvnc.com",
     "url": [
-        "https://www.uvnc.com/component/jdownloads/send/0-/402-ultravnc-1-3-2-bin-zip.html?Itemid=0#/dl.zip",
+        "https://www.uvnc.com/component/jdownloads/send/0-/403-ultravnc-1-3-2-bin-zip.html?Itemid=0#/dl.zip",
         "https://www.uvnc.com/download/encryptionplugins.zip"
     ],
     "hash": [
@@ -55,9 +55,9 @@
     ],
     "checkver": {
         "url": "https://www.uvnc.com/downloads/ultravnc.html",
-        "regex": "download ultravnc ([\\d.]+)"
+        "regex": "UltraVNC ([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://www.uvnc.com/component/jdownloads/send/0-/402-ultravnc-$dashVersion-bin-zip.html?Itemid=0#/dl.zip"
+        "url": "https://www.uvnc.com/component/jdownloads/send/0-/403-ultravnc-$dashVersion-bin-zip.html?Itemid=0#/dl.zip"
     }
 }
