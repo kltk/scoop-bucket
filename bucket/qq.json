@@ -1,0 +1,21 @@
+{
+    "version": "9.4.2.27666",
+    "homepage": "https://im.qq.com",
+    "description": "QQ",
+    "url": "https://dl.softmgr.qq.com/original/im/QQ9.4.2.27666.exe#/dl.7z",
+    "hash": "2a3be5e3055cc57ac896f6e6249b57988c8c3c0457b0f1d7e1810a577216e6af",
+    "extract_dir": "Files",
+    "shortcuts": [
+        [
+            "Bin\\QQ.exe",
+            "QQ"
+        ]
+    ],
+    "checkver": {
+        "url": "https://pc.qq.com/detail/2/detail_2.html",
+        "regex": "QQ([\\d.]+)\\.exe"
+    },
+    "autoupdate": {
+        "url": "https://dl.softmgr.qq.com/original/im/QQ$version.exe#/dl.7z"
+    }
+}
