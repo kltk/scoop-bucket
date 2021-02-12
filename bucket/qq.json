@@ -1,9 +1,9 @@
 {
-    "version": "9.4.2.27666",
+    "version": "9.4.3.27712",
     "homepage": "https://im.qq.com",
     "description": "QQ",
-    "url": "https://dl.softmgr.qq.com/original/im/QQ9.4.2.27666.exe#/dl.7z",
-    "hash": "2a3be5e3055cc57ac896f6e6249b57988c8c3c0457b0f1d7e1810a577216e6af",
+    "url": "https://dl.softmgr.qq.com/original/im/QQ9.4.3.27712.exe#/dl.7z",
+    "hash": "24ce0799ab615f605fa1567ade0835dbe79c28f718511454395d77687a3784a0",
     "extract_dir": "Files",
     "shortcuts": [
         [
