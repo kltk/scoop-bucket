@@ -1,10 +1,13 @@
 {
-    "version": "0.10.18",
+    "version": "0.10.19",
     "description": "Below is the documentation of SideQuest with instructions for building and signing then application.",
     "homepage": "https://github.com/SideQuestVR/SideQuest",
-    "depends": ["adb", "scrcpy"],
-    "url": "https://github.com/SideQuestVR/SideQuest/releases/download/v0.10.18/SideQuest-Setup-0.10.18-x64-win.exe#/dl.7z",
-    "hash": "9b787162edb7c1aa52cad220f9ef6c4ae200dd10ad83d5612e81595e2b5e5dd8",
+    "depends": [
+        "adb",
+        "scrcpy"
+    ],
+    "url": "https://github.com/SideQuestVR/SideQuest/releases/download/v0.10.19/SideQuest-Setup-0.10.19-x64-win.exe#/dl.7z",
+    "hash": "5f2b7850fd697d64335cc5d6ba775b8dd9cfc554800401ce09af23ca7f46fd5b",
     "installer": {
         "script": [
             "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
@@ -14,9 +17,7 @@
         ]
     },
     "uninstaller": {
-        "script":[
-            "Remove-Item \"$env:AppData\\SideQuest\" -Force -Recurse"
-        ]
+        "script": "Remove-Item \"$env:AppData\\SideQuest\" -Force -Recurse"
     },
     "bin": "SideQuest.exe",
     "shortcuts": [
