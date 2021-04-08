@@ -4,29 +4,20 @@
     "homepage": "https://github.com/be5invis/Sarasa-Gothic",
     "url": [
         "https://github.com/be5invis/Sarasa-Gothic/releases/download/v0.21.0/sarasa-gothic-ttc-0.21.0.7z",
-        "https://gist.githubusercontent.com/Jaykul/d53a16ce5e7d50b13530acb4f98aaabd/raw/e79bfc0a61e3bc8f2c5fd9f67979d1066ff02cbc/Fonts.psm1"
+        "https://gist.githubusercontent.com/kltk/d3aa9225beecc508a098c6f4bc895420/raw/1ee0850c2c424fc90cb16875e86a57a0ee3a455f/font.ps1"
     ],
     "hash": [
         "cfe1b519e1272fd2b1d069007456001c489b16f923d2b6356b102af471857c83",
-        "51a94af2aa45bd17dbb196f015574c1107164d115c90307280104de4423d82c7"
+        "62d2901ee102e2210052b595d2a73caf322155f9833baba89227b2fe03cb5c52"
     ],
     "installer": {
         "script": [
-            "Import-Module \"$dir/Fonts.psm1\"",
-            "Get-ChildItem $dir -filter 'sarasa*.ttc' | ForEach-Object {",
-            "  # $name = (New-Object -COMObject Shell.Application).Namespace($dir).GetDetailsOf($_, 21)",
-            "  # New-ItemProperty -Path 'HKCU:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value $dir\\$_ -Force | Out-Null",
-            "  Add-Font $dir\\$_",
-            "}"
+            "$dir/font.ps1 Add $dir"
         ]
     },
     "uninstaller": {
         "script": [
-            "Import-Module \"$dir/Fonts.psm1\"",
-            "Get-ChildItem $dir -filter 'sarasa*.ttc' | ForEach-Object {",
-            "  # Remove-ItemProperty -Path 'HKCU:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
-            "  Remove-Font $dir\\$_",
-            "}",
+            "$dir/font.ps1 Remove $dir",
             "Write-Host \"The 'Sarasa-Gothic' Font family has been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
         ]
     },
