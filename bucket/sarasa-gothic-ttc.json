@@ -12,12 +12,12 @@
     ],
     "installer": {
         "script": [
-            "$dir/font.ps1 Add $dir"
+            "Invoke-Expression \"$dir/font.ps1 Add $dir\""
         ]
     },
     "uninstaller": {
         "script": [
-            "$dir/font.ps1 Remove $dir",
+            "Invoke-Expression \"$dir/font.ps1 Add $dir\"",
             "Write-Host \"The 'Sarasa-Gothic' Font family has been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
         ]
     },
