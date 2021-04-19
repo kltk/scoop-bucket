@@ -1,5 +1,5 @@
 {
-    "version": "3.2.1.141",
+    "version": "3.2.1.151",
     "homepage": "https://weixin.qq.com/",
     "description": "Free messaging and calling app.",
     "notes": "We don't persist your WeChat data, they are still storaged in '%APPDATA%\\Tencent\\WeChat'.",
@@ -7,8 +7,8 @@
         "identifier": "EULA",
         "url": "https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_agreement&s=default"
     },
-    "url": "https://dl.softmgr.qq.com/original/im/WeChatSetup_3.2.1.141.exe#/dl.7z",
-    "hash": "76523562b1920d6eb6f63eb91ffa95843eb8fc55d66f2eba2f43184204208c76",
+    "url": "https://dl.softmgr.qq.com/original/im/WeChatSetup_3.2.1.151.exe#/dl.7z",
+    "hash": "d87dbbf74caa6bd279def8b89c99f18b49a0a3722d966b861fcaa512174020e2",
     "post_install": [
         "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
         "Remove-Item \"$dir\\`$_15_\" -Force -Recurse",
