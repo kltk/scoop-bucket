@@ -1,5 +1,5 @@
 {
-    "version": "3.4.7",
+    "version": "3.4.8",
     "description": "A network protocol analyzer that lets you see what’s happening on your network at a microscopic level.",
     "homepage": "https://www.wireshark.org/",
     "license": "GPL-2.0-or-later",
@@ -11,8 +11,8 @@
     "suggest": {
         "Nmap (includes Npcap)": "nmap"
     },
-    "url": "https://1.eu.dl.wireshark.org/win64/Wireshark-win64-3.4.7.msi",
-    "hash": "86dd46ede8ce640623686d73b9f1bd5f514428ea3f2d335325db4867330a9d38",
+    "url": "https://1.eu.dl.wireshark.org/win64/Wireshark-win64-3.4.8.msi",
+    "hash": "d676e4dcf24b324ca1a611669bc6e07653e5b6744ddede8f6eaa371a5f08817d",
     "extract_dir": "Wireshark",
     "pre_install": [
         "Set-Content \"$dir\\wireshark.cmd\" -Value @'",
