@@ -1,9 +1,9 @@
 {
-    "version": "0.17.1",
+    "version": "0.17.2",
     "description": "A Windows/macOS GUI based on Clash",
     "homepage": "https://github.com/Fndroid/clash_for_windows_pkg",
-    "url": "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.17.1/Clash.for.Windows-0.17.1-win.7z",
-    "hash": "e7cb8bc26824905376515ede9d4559d2d4accdc939345663f6db8632f848a3c2",
+    "url": "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.17.2/Clash.for.Windows-0.17.2-win.7z",
+    "hash": "7619501de11d517462efccdb1c9ad20584ac424719d906a473c4eef17089f9be",
     "bin": "Clash for Windows.exe",
     "shortcuts": [
         [
