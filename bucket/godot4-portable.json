@@ -22,7 +22,7 @@
     "shortcuts": [
         [
             "godot.exe",
-            "Godot"
+            "Godot4"
         ]
     ],
     "checkver": {
