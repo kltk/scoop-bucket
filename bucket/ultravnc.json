@@ -54,7 +54,7 @@
         "mslogon.log"
     ],
     "checkver": {
-        "url": "https://www.uvnc.com/downloads/ultravnc/135-download-ultravnc-1-3-2.html",
+        "url": "https://www.uvnc.com/downloads/ultravnc/143-ultravnc-1-3-4-2.html",
         "regex": "(?<number>\\d+)-ultravnc-(\\d+)-(\\d+)-(\\d+)-bin-zip.html",
         "replace": "${1}.${2}.${3}"
     },
