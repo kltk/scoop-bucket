@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.zerotier.com",
-    "version": "1.8.2",
+    "version": "1.8.3",
     "description": "ZeroTier is a smart programmable Ethernet switch for planet Earth",
-    "url": "https://download.zerotier.com/RELEASES/1.8.2/dist/ZeroTier%20One.msi#/setup.msi_",
-    "hash": "1426b9313c21d530b51871156dd9dff2ea8ba062fb8e030e907cf04ac16f05df",
+    "url": "https://download.zerotier.com/RELEASES/1.8.3/dist/ZeroTier%20One.msi#/setup.msi_",
+    "hash": "656891485ff9d132616323ea5812ec4ee63440c6f10427e3b9214c648f682d0f",
     "installer": {
         "script": "Start-Process -Wait msiexec \"/i `\"$dir\\setup.msi_`\" /qn INSTALLFOLDER=`\"$dir`\"\" -Verb RunAs"
     },
