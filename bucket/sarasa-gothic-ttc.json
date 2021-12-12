@@ -1,13 +1,13 @@
 {
-    "version": "0.35.3",
+    "version": "0.35.4",
     "description": "This is SARASA GOTHIC, a CJK programming font based on Iosevka and Source Han Sans.",
     "homepage": "https://github.com/be5invis/Sarasa-Gothic",
     "url": [
-        "https://github.com/be5invis/Sarasa-Gothic/releases/download/v0.35.3/sarasa-gothic-ttc-0.35.3.7z",
+        "https://github.com/be5invis/Sarasa-Gothic/releases/download/v0.35.4/sarasa-gothic-ttc-0.35.4.7z",
         "https://gist.githubusercontent.com/kltk/d3aa9225beecc508a098c6f4bc895420/raw/1ee0850c2c424fc90cb16875e86a57a0ee3a455f/font.ps1"
     ],
     "hash": [
-        "b1f6e53b3287f538331fd832d4d39cfbca66c3637d7a3a701f817da3e627bb16",
+        "28f32622fbd1e6c77f819a1dfba259b39291caf709bf67849837fee0d9287e42",
         "62d2901ee102e2210052b595d2a73caf322155f9833baba89227b2fe03cb5c52"
     ],
     "installer": {
