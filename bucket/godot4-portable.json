@@ -1,16 +1,16 @@
 {
-    "version": "4.0-dev.20211210",
+    "version": "4.0-dev.20220105",
     "description": "A feature-packed, cross-platform game engine to create 2D and 3D games from a unified interface.",
     "homepage": "https://godotengine.org/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.tuxfamily.org/godotengine/testing/4.0/4.0-dev.20211210/Godot_v4.0-dev.20211210_win64.exe.zip",
-            "hash": "40167a6e0ea50a1b6688509bffd032bf9d40f7e56c6f50ff6b2da70e95c5bbe2"
+            "url": "https://downloads.tuxfamily.org/godotengine/testing/4.0/4.0-dev.20220105/Godot_v4.0-dev.20220105_win64.exe.zip",
+            "hash": "beb67f47138ad0cd20d7b58392e6256ce144f6d7b8daa2cdd72a2bba1aff76ed"
         },
         "32bit": {
-            "url": "https://downloads.tuxfamily.org/godotengine/testing/4.0/4.0-dev.20211210/Godot_v4.0-dev.20211210_win32.exe.zip",
-            "hash": "4020cb3eca4fea5bdfe1b650e169cf175acb2037224d3f57a7a58886b13d7dbe"
+            "url": "https://downloads.tuxfamily.org/godotengine/testing/4.0/4.0-dev.20220105/Godot_v4.0-dev.20220105_win32.exe.zip",
+            "hash": "e76a9d2a2b2e209b56140c039fabf9910378d96426f895593d29b1caa4b12db9"
         }
     },
     "pre_install": [
