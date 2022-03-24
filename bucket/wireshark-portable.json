@@ -1,5 +1,5 @@
 {
-    "version": "3.6.2",
+    "version": "3.6.3",
     "description": "A network protocol analyzer that lets you see what’s happening on your network at a microscopic level.",
     "homepage": "https://www.wireshark.org/",
     "license": "GPL-2.0-or-later",
@@ -12,8 +12,8 @@
         "Nmap (includes Npcap)": "nmap"
     },
     "depends": "advancedrun",
-    "url": "https://1.eu.dl.wireshark.org/win64/Wireshark-win64-3.6.2.msi",
-    "hash": "62f1e4540b1dce852d83030c4ca28c7566facce2811f970d5bd77be858d253e2",
+    "url": "https://1.eu.dl.wireshark.org/win64/Wireshark-win64-3.6.3.msi",
+    "hash": "8ac14d26320751c938c70ba81fab3febb1a95c79588316c68757ec442fc92e1f",
     "extract_dir": "Wireshark",
     "pre_install": [
         "New-Item -ItemType HardLink -Path \"$dir\\wireshark-portable.exe\" -Target \"$(appdir advancedrun)\\current\\AdvancedRun.exe\" -ErrorAction Ignore | Out-Null",
@@ -31,7 +31,10 @@
     "persist": "data",
     "bin": "wireshark-portable.exe",
     "shortcuts": [
-        ["wireshark-portable.exe", "Wireshark"]
+        [
+            "wireshark-portable.exe",
+            "Wireshark"
+        ]
     ],
     "checkver": {
         "url": "https://www.wireshark.org/update/0/Wireshark/0.0.0/Windows/x86/en-US/stable.xml",
