@@ -33,7 +33,7 @@
     "checkver": {
         "url": "https://wj32.org/processhacker/nightly.php?phupdater",
         "jsonpath": "$.bin_url",
-        "regex": "https://github.com/ProcessHackerRepoTool/nightly-builds-mirror/releases/download/v(?<version>.+)/processhacker-3.0.4780-bin.zip"
+        "regex": "https://github.com/ProcessHackerRepoTool/nightly-builds-mirror/releases/download/v(?<version>.+)/processhacker-(?<version>.+)-bin.zip"
     },
     "autoupdate": {
         "url": "https://github.com/ProcessHackerRepoTool/nightly-builds-mirror/releases/download/v$version/processhacker-$version-bin.zip",
