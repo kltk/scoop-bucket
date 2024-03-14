@@ -33,9 +33,9 @@
     },
     "checkver": {
         "url": "https://rime.im/download/",
-        "regex": "weasel-([\\d.]+)-installer.exe"
+        "regex": "/(?<marjor>[\\d.]+)/weasel-([\\d.]+)-installer.exe"
     },
     "autoupdate": {
-        "url": "https://dl.bintray.com/rime/weasel/weasel-$version-installer.exe#/dl.7z"
+        "url": "https://github.com/rime/weasel/releases/download/$matchMarjor/weasel-$version-installer.exe"
     }
 }
