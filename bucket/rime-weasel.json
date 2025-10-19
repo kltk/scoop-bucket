@@ -1,10 +1,10 @@
 {
-    "version": "0.16.1.0",
+    "version": "0.17.4.0",
     "description": "【小狼毫】Rime for Windows",
     "homepage": "https://rime.im",
     "license": "GPL",
-    "url": "https://github.com/rime/weasel/releases/download/0.16.1/weasel-0.16.1.0-installer.exe#dl.7z",
-    "hash": "bb5742f8e363690cc947ef310165a54ca43b8e3c8bf66c54d12bfb9bde5c45cd",
+    "url": "https://github.com/rime/weasel/releases/download/0.17.4/weasel-0.17.4.0-installer.exe#dl.7z",
+    "hash": "cf509534a8f5f8af9c98ed7cbb8f135439f145a8cbe7e50ede42bb5b5ab45c29",
     "post_install": [
         "$Source = \"$persist_dir\\AppData\"",
         "$Target = \"$env:AppData\\Rime\"",
