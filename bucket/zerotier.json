@@ -7,6 +7,17 @@
     "installer": {
         "script": "Start-Process -Wait msiexec \"/i `\"$dir\\setup.msi_`\" /qn INSTALLFOLDER=`\"$dir`\"\" -Verb RunAs"
     },
+    "post_install": [
+        "$Source = \"$persist_dir\"",
+        "$Target = \"$env:LocalAppData\\ZeroTier\"",
+        "New-Item -ItemType Directory -Path $Source -ErrorAction Ignore | Out-Null",
+        "New-Item -ItemType Junction -Path $Target -Target $Source -ErrorAction Ignore | Out-Null",
+    ],
+    "pre_uninstall": [
+        "$Source = \"$persist_dir\\AppData\"",
+        "$Target = \"$env:LocalAppData\\ZeroTier\"",
+        "cmd /c rmdir /s /q $Target"
+    ],
     "uninstaller": {
         "script": "Start-Process -Wait msiexec \"/x `\"$dir\\setup.msi_`\" /qn\" -Verb RunAs"
     },
