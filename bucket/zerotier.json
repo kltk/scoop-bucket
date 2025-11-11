@@ -11,7 +11,7 @@
         "$Source = \"$persist_dir\"",
         "$Target = \"$env:LocalAppData\\ZeroTier\"",
         "New-Item -ItemType Directory -Path $Source -ErrorAction Ignore | Out-Null",
-        "New-Item -ItemType Junction -Path $Target -Target $Source -ErrorAction Ignore | Out-Null",
+        "New-Item -ItemType Junction -Path $Target -Target $Source -ErrorAction Ignore | Out-Null"
     ],
     "pre_uninstall": [
         "$Source = \"$persist_dir\\AppData\"",
